@@ -36,7 +36,7 @@ class Account:
                 print("Loan amount exceeds maximum limit.")
         else:
             print("Loan request denied.")
-
+        
     def repay_loan(self, amount):
         if amount > self.loan_balance:
             self.deposit(amount - self.loan_balance)
