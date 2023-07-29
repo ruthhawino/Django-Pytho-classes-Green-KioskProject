@@ -3,10 +3,11 @@ from django.db import models
 
 
 class Payment(models.Model):
-    # amount = models.DecimalField(max_digits=10, decimal_places=2)
-    payment_date = models.DateTimeField(auto_now_add=True)
-    payment_method = models.CharField(max_length=50)
-
+    customer_name=models.CharField(max_length=32)
+    total_amount=models.DecimalField(decimal_places=4,max_digits=4)
+    payment_status=models.BooleanField()
+    order_status=models.CharField(max_length=32)
+    payment_method=models.CharField(max_length=32)
 
     
    
