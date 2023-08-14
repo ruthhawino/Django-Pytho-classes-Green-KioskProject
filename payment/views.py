@@ -1,3 +1,9 @@
 from django.shortcuts import render
 
-# Create your views here.
+from .forms import PaymentUploadForm
+from payment.models import Payment
+
+def payment_upload(request):
+    form = PaymentUploadForm()
+    return render(request,"payment/payment_upload.html", {"form":form})
+
