@@ -1,7 +1,7 @@
 from django.db import models
 
 
-class Deliver(models.Model):
+class Delivery(models.Model):
     recipient_name = models.CharField(max_length=100)
     address = models.TextField()
     delivery_date = models.DateField()

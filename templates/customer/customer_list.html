@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GreenKiosk</title>
+
+    </head>
+    <body>
+    
+<h3>customer List</h3>
+<table>
+    <th>
+        <td>user</td>
+        <td>first_name</td>
+        <td>last_name</td>
+        <td>phone</td>
+        <td>email</td>
+        <td>password</td>
+
+    </th>
+
+{
+    % for customer in customer%
+}
+<tr>
+    <td>{{customer.name}}</td>
+    <td>{{first_name.first_name}}</td>
+    <td>{last_name.last_name}</td>
+    <td><a href="{% url 'customer_detail_view' id=customer.id %}">View customer
+    </a></td>
+
+</tr>
+{%endfor%}
+</table>
+</body>
+</html> 

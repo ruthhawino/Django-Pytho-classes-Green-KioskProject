@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <div>
+        <img src="{{ customer.image.url }}" alt="{{ customer.title}}" class="images">
+        <h2 class="customer-title"> {{ customer.title}}</h2>
+        <p class="custmer-username"> {{customer.user}}</p>
+        <p class="customer"> {{customer.first_name }}</p>
+        <p class="customer-name"> {{customer.last_name }}</p>        
+        <p class="customer-email"> {customer.email}</p>
+        <span class="customer-phone"> {{ customer.phone}}</span>
+    </div>
+
+</body>
+</html>
