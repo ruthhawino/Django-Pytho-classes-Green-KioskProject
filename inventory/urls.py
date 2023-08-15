@@ -1,3 +1,4 @@
+
 from django.urls import path
 from .views import product_upload_view
 from  .views import products_list_view
@@ -12,3 +13,37 @@ urlpatterns =[
 
     
 ]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# from django.urls import path
+# from .views import product_upload
+# from  .views import products_list
+# from .views import product_detail
+# from .views import product_update
+
+# urlpatterns =[
+#     path ("products/upload/", product_upload, name = "product_upload"),
+#     path("products/list",products_list,name ="products_list"),
+#     path("products/<int:id>/",product_detail, name="product_detail"),
+#     path("products/edit/<int:id>", product_update, name = "product_update"),
+
+    
+# ]

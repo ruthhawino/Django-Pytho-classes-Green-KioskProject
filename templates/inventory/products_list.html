@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -23,13 +23,14 @@
             display: flex;
             flex-wrap: wrap;
             padding: 20px;
+            margin-left:-10%;
         }
 
         .product{
             border:none;
             width: 350px;
             height: 40vh;
-            background-color: rgb(177, 220, 241);
+            background-color:rgb(214, 247, 95);
             box-shadow: 0 2px 4px rgb(0.2, 0.2, 0.2, 0.8);
             margin: 20px;
             padding: 20px;
@@ -58,27 +59,6 @@
     </head>
     <body>
     
-<h3>Product List</h3>
-<table>
-    <th>
-        <td>Name</td>
-        <td>Description</td>
-        <td>Price</td>
-        <td></td>
-    </th>
-
-{
-    % for product in products%
-}
-<tr>
-    <td>{{product.name}}</td>
-    <td>{{product.description}}</td>
-    <td>{{product.price}}</td>
-
-</tr>
-{%endfor%}
-</table>
-
 <div class="product-container">
       
         {% for product in products %}
@@ -98,4 +78,4 @@
         {% endfor%}
     </div>
 </body>
-</html> 
+</html>

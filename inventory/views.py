@@ -30,3 +30,86 @@ def product_update_view(request, id):
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# from django.shortcuts import render ,redirect
+# from .forms import ProductUploadForm
+# from .models import Product
+
+# def product_upload(request):
+#     form = ProductUploadForm()
+#     return render(request,"inventory/product_upload.html", {"form":form})
+
+# def products_list(request):
+#     products = Product.objects.all()
+#     return render(request,"inventory/products_list.html",{"product":Product})
+
+
+# def product_detail(request,id):
+#     product = Product.objects.get(id=id)
+#     return render(request,"inventory/product_details.html", {"product":Product})
+
+# def product_update(request, id):
+#     product = Product.objects.get(id=id)
+#     if request.method == 'POST':
+#         form = ProductUploadForm(request.POST, instance=Product)
+#         if form.is_valid():
+#             form.save()
+#             return redirect("product_detail", id=Product.id)
+
+#     else:
+#         form =ProductUploadForm(instance=Product)
+#         return render(request, "inventory/edit_product.html", {'form': form})
+
+
+
+
