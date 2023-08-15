@@ -7,65 +7,66 @@
 </head>
 <body>
     <style>
-    body {
-        background-color:#ccdbe1 ;
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 0;
-    }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
 
-    .product-container {
-        max-width: 800px;
-        margin: 50px auto;
-        background-color: #fff;
-        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-        padding: 20px;
-        border-radius: 5px;
-    }
+         .product-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            margin: 20px auto;
+            width: 80%;
+            max-width: 400px;
+        }
 
-    .product-image {
-        max-width: 100%;
-        height: auto;
-        border-radius: 5px;
-        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    }
+        .images {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
 
-    .product-title {
-        font-size: 24px;
-        margin-top: 10px;
-    }
+        .product-title {
+            font-size: 1.5rem;
+            margin: 10px 0;
+        }
 
-    .product-description {
-        font-size: 16px;
-        color: #555;
-        margin-top: 10px;
-    }
+        .product-description {
+            font-size: 1rem;
+            color:black;
+            margin: 0;
+        }
 
-    .product-price {
-        font-size: 20px;
-        color: #3498db;
-        display: block;
-        margin-top: 10px;
-    }
+        .product-price {
+            font-size: 1.25rem;
+            font-weight: bold;
+            color:black;
+        }
 
-    .add-to-cart-btn {
-        background-color: #06619e;
-        color: #fff;
-        border: none;
-        padding: 10px 20px;
-        border-radius: 4px;
-        cursor: pointer;
-        margin-top: 20px;
-    }
+        .add-to-cart-btn {
+            background-color:rgb(4, 146, 4);
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
 
-    .add-to-cart-btn:hover {
-        background-color: #e2e60d;
-    }
-    .images{
-        width: 40%;
-    }
-</style>
-
+        .add-to-cart-btn:hover {
+            background-color:rgb(51, 236, 14);
+            text-decoration: solid;
+            color: black;
+        }
+    </style>
 
     <div>
         <img src="{{ product.image.url }}" alt="{{ product.title}}" class="images">
@@ -73,6 +74,8 @@
         <p class="product-description"> {{ product.description}}</p>
         <span class="product-price"> {{ product.price}}</span>
         <button class="add-to-cart-btn">Add to cart</button>
+        <button class="add-to-cart-btn">Delete from Cart</button>
+
     </div>
 
 </body>
